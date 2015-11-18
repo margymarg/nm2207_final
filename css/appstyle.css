@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+html, body
+{
+	
+	height: 90%;
+	width: 100%%;
+}
+
+body
+
+{
+	background:url("http://3.bp.blogspot.com/_tF-yME_ftws/TMOCIFJU_QI/AAAAAAAAACE/pHGOPlB8lBs/s1600/1287779742839.jpg");
+	background-size: cover;
+	backgorund-opacity:0.8;
+    background-position: relative;  
+}
+
+
+h3 {
+	color:white;
+	height: 10%;
+	top:100px;
+	user-select: none;
+	text-align: center;
+	font-size: 250%;
+	opacity: :1;
+	font-family: "helvetica";
+	letter-spacing: 3px;
+	display:inline-block;
+}
+
+
+h4 { 
+	color:white;	
+	user-select: none;
+	top:100px;
+	text-align: center;
+	font-size: 100%;
+	font-family: "helvetica";
+	letter-spacing: 2px;
+	margin-top: 100px;
+}
+
+h5 {
+	color:white;	
+	user-select: none;
+	text-align: center;
+	font-size: 100%;
+	font-family: "helvetica";
+	letter-spacing: 2px;
+	margin-top: 100px;
+}
+
+
+
+#main > #nav {
+	float: left;
+	position: relative;
+   margin: 4px;
+   padding: 5px;
+   left: 50px;
+   height: 300px;
+   width: 200px;
+   border: 3px solid #8888bb;
+   border-radius: 7pt;
+   background: white;
+   opacity: 0.7;
+   background: url("http://il1.picdn.net/shutterstock/videos/6244652/thumb/11.jpg");
+   background-size: cover;
+   background-position: center;
+
+           flex: 1 6 15%;
+           order: 1;
+   }
+
+
+
+#main > #mySVGCanvas {
+	border: 2px solid #8888bb;
+	width: 650px;
+	height: 400px;
+	margin: auto;
+	background-color: black;
+	position: relative;
+	float:center;
+	order: 2;
+}
+
+#head{
+    width: 650px;
+    left: 300px;
+    height: 80px;
+    padding: 0.1px;
+    margin: 50px;
+    background-color:#BF4139;
+    position: relative;
+    border-radius: 7pt;
+ 	opacity: 0.9;
+    line-height: 0px;
+
+}
+
+
+#main >#aside{
+	float:right;
+	position: relative;
+   margin: 4px;
+   padding: 5px;
+   right: 50px;
+   height: 300px;
+   width: 200px;
+   border: 3px solid #8888bb;
+   border-radius: 7pt;
+   background: white;
+   opacity: 0.8;
+   background: url("http://il1.picdn.net/shutterstock/videos/6244652/thumb/11.jpg");
+   background-size: cover;
+   background-position: center;
+           flex: 1 6 15%;
+           order: 3;
+  }
+
+ @media all and (max-width: 640px) {
+   #main, #page {
+    flex-flow: column;
+    flex-direction: column;
+   }
+
+  #main > #nav, #main > #mySVGCanvas, #main > #aside {
+    /* Return them to document order */
+            order: 0;
+   }
+  
+   #main > #nav, #main > #aside, header{
+    min-height: 50px;
+    max-height: 50px;
+   }
+
